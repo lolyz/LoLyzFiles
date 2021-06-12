@@ -93,7 +93,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>You need to join in my Channel/Group to use me\n\nPlease join Channel</b>"
+    text = "<b>Kamu Harus Bergabung / Subscribe Channel Telegram Saya\n\n\n\n\n\nKlik Coba Lagi Kalau Sudah Bergabung Channel\n\n</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()

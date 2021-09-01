@@ -97,7 +97,7 @@ async def not_joined(client: Client, message: Message):
     message_text = message.text
     try:
         command, argument = message_text.split()
-      reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔄 𝔾𝔼𝕋 𝔽𝕀𝕃𝔼 🔄", url = client.invitelink)]])
+      text = text + f" "
            except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup(

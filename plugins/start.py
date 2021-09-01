@@ -100,25 +100,15 @@ async def not_joined(client: Client, message: Message):
         text = text + f" <b>\n\n<a href='https://t.me/{client.username}?start={argument}'>COBA LAGI</a></b>"
     except ValueError:
         pass
-    reply_markup=InlineKeyboardMarkup(
-
+    reply_markup = InlineKeyboardMarkup(
                         [
-
                             [
-
-                                InlineKeyboardButton("🔞 Join Channel 🔞", url = client.invitelink)
-
-                            ],
-
-                            [
-
+                                InlineKeyboardButton("🔞 Join Channel 🔞", url = client.invitelink),
                                 InlineKeyboardButton("🔄 GET LINK 🔄", url=f'https://t.me/{client.username}?start={argument}')
-
                             ]
-
                         ]
                     )
-await message.reply(
+    await message.reply(
         text = text,
         reply_markup = reply_markup,
         quote = True,

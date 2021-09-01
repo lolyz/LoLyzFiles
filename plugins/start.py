@@ -103,8 +103,8 @@ async def not_joined(client: Client, message: Message):
     reply_markup = InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔞 L̳̿͟͞A̳̿͟͞G̳̿͟͞I̳̿͟͞ ̳̿͟͞V̳̿͟͞I̳̿͟͞R̳̿͟͞A̳̿͟͞L̳̿͟͞ 🔞", url = client.invitelink)
-                                InlineKeyboardButton("🔞 T̳̿͟͞E̳̿͟͞R̳̿͟͞V̳̿͟͞I̳̿͟͞R̳̿͟͞A̳̿͟͞L̳̿͟͞ 🔞", url = client.invitelink)
+                                InlineKeyboardButton("🔞 L̳̿͟͞A̳̿͟͞G̳̿͟͞I̳̿͟͞ ̳̿͟͞V̳̿͟͞I̳̿͟͞R̳̿͟͞A̳̿͟͞L̳̿͟͞ 🔞", url=f'https://t.me/LgViral'),
+                                InlineKeyboardButton("🔞 T̳̿͟͞E̳̿͟͞R̳̿͟͞V̳̿͟͞I̳̿͟͞R̳̿͟͞A̳̿͟͞L̳̿͟͞ 🔞", url=f'https://t.me/TerViral')
 
                             ],
                             [

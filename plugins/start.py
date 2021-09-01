@@ -118,7 +118,7 @@ async def not_joined(client: Client, message: Message):
 
                         ]
                     )
-await message.reply(
+(
         text = text,
         reply_markup = reply_markup,
         quote = True,

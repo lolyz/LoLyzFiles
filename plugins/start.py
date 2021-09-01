@@ -118,9 +118,3 @@ async def not_joined(client: Client, message: Message):
 
                         ]
                     )
-(
-        text = text,
-        reply_markup = reply_markup,
-        quote = True,
-        disable_web_page_preview = True
-    )

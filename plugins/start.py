@@ -112,7 +112,7 @@ async def not_joined(client: Client, message: Message):
 
                             [
 
-                                InlineKeyboardButton("🔄 GET LINK 🔄", url = https://t.me/{client.username}?start={argument}")
+                                InlineKeyboardButton("🔄 GET LINK 🔄", url=f'https://t.me/{client.username}?start={argument}')
 
                             ]
 

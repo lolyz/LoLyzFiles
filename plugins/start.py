@@ -95,9 +95,6 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     text = "<b>𝗔𝗻𝗱𝗮 𝗵𝗮𝗿𝘂𝘀 𝗷𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹/𝗚𝗿𝗼𝘂𝗽 𝘂𝗻𝘁𝘂𝗸 𝗺𝗲𝗻𝗴𝗴𝘂𝗻𝗮𝗸𝗮𝗻 𝗕𝗢𝗧\n\n 𝙏𝙤𝙡𝙤𝙣𝙜 𝙗𝙚𝙧𝙜𝙖𝙗𝙪𝙣𝙜𝙡𝙖𝙝 𝙙𝙞 𝐊𝐞𝐝𝐮𝐚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡/𝙂𝙧𝙤𝙪𝙥. 𝙆𝙖𝙡𝙖𝙪 𝙗𝙚𝙡𝙪𝙢 𝙟𝙤𝙞𝙣, 𝘽𝙊𝙏 𝙩𝙞𝙙𝙖𝙠 𝙢𝙚𝙣𝙜𝙞𝙧𝙞𝙢 𝙛𝙞𝙡𝙚/𝙩𝙞𝙙𝙖𝙠 𝘽𝙚𝙠𝙚𝙧𝙟𝙖. 𝙠𝙖𝙡𝙖𝙪 𝙨𝙪𝙙𝙖𝙝 𝙟𝙤𝙞𝙣 𝙨𝙞𝙡𝙖𝙝𝙠𝙖𝙣 𝙠𝙡𝙞𝙠 𝔾𝔼𝕋 𝔽𝕀𝕃𝔼</b>"
     message_text = message.text
-    try:
-        command, argument = message_text.split()
-      text = text + f" "
            except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup(
@@ -105,7 +102,6 @@ async def not_joined(client: Client, message: Message):
                             [
                                 InlineKeyboardButton("𝐋𝐀𝐆𝐈 𝐕𝐈𝐑𝐀𝐋", url=f'https://t.me/LgViral'),
                                 InlineKeyboardButton("𝐓𝐄𝐑𝐕𝐈𝐑𝐀𝐋", url=f'https://t.me/TerViral')
-
                             ],
                             [
                                 InlineKeyboardButton("🔄 𝔾𝔼𝕋 𝔽𝕀𝕃𝔼 🔄", url=f'https://t.me/{client.username}?start={argument}')

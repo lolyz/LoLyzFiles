@@ -107,7 +107,7 @@ async def not_joined(client: Client, message: Message):
                        InlineKeyboardButton("𝐓𝐄𝐑𝐕𝐈𝐑𝐀𝐋", url="https://t.me/TerViral")
                   ],
                   [
-                       InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url=f"https://t.me/{client.username}?start={argument}")
+                       InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url=f'https://t.me/{client.username}?start={argument}')
                   ]
              ]
          )

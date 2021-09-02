@@ -97,7 +97,7 @@ async def not_joined(client: Client, message: Message):
     message_text = message.text
     try:
         command, bro = message_text.split()
-        text = text + f" <b>and <a href='https://t.me/{client.username}?start={bro}'>GET FILE</a></b>"
+        text = text + f" <b>and <a href='https://t.me/{client.username}?start={bro}'>GET FILE</a>\nLalu Buka Lagi Link Sebelumnya.</b>"
     except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup(

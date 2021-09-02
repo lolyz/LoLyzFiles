@@ -94,12 +94,10 @@ async def start_command(client: Client, message: Message):
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     text = "<b>𝗔𝗻𝗱𝗮 𝗵𝗮𝗿𝘂𝘀 𝗷𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹/𝗚𝗿𝗼𝘂𝗽 𝘂𝗻𝘁𝘂𝗸 𝗺𝗲𝗻𝗴𝗴𝘂𝗻𝗮𝗸𝗮𝗻 𝗕𝗢𝗧\n\n𝙏𝙤𝙡𝙤𝙣𝙜 𝙗𝙚𝙧𝙜𝙖𝙗𝙪𝙣𝙜𝙡𝙖𝙝 𝙙𝙞 𝐊𝐞𝐝𝐮𝐚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡/𝙂𝙧𝙤𝙪𝙥. 𝙆𝙖𝙡𝙖𝙪 𝙗𝙚𝙡𝙪𝙢 𝙟𝙤𝙞𝙣, 𝘽𝙊𝙏 𝙩𝙞𝙙𝙖𝙠 𝙢𝙚𝙣𝙜𝙞𝙧𝙞𝙢 𝙛𝙞𝙡𝙚/𝙩𝙞𝙙𝙖𝙠 𝘽𝙚𝙠𝙚𝙧𝙟𝙖. 𝙠𝙖𝙡𝙖𝙪 𝙨𝙪𝙙𝙖𝙝 𝙟𝙤𝙞𝙣 𝙨𝙞𝙡𝙖𝙝𝙠𝙖𝙣 𝙠𝙡𝙞𝙠</b>"
-    message_text = message.text
-   
+       try:
+        command, bro = message_text.split()
     except ValueError:
         pass
-    try:
-        command, bro = message_text.split()
     reply_markup = InlineKeyboardMarkup(
         [
              [

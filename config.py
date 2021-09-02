@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1808857069:AAHiCTKtBuzGUJPZTGkF-jT8YhvKwYxt6RU")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1918762226:AAG5FzhvQBblSYz4p7Y1f8i_kR2OhvVdqAo")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "5483910"))
@@ -18,12 +18,12 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001490096978"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "1343409083"))
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001400005138"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001427249232"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nJangan Lupa Kunjungi ahmantap.com\n\nChannel : @TerViral & @LgViral.\n\nWebsite : www.unduh.ga")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nJangan Lupa Kunjungi ahmantap.com\n\nChannel : @TerViral & @LgViral.\n\nWebsite : Freenulls.com")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):

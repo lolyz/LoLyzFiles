@@ -97,7 +97,6 @@ async def not_joined(client: Client, message: Message):
     message_text = message.text
     try:
         command, argument = message_text.split()
-        argument = message_text.split()
         text = text + f""
     except ValueError:
         pass
@@ -105,9 +104,6 @@ async def not_joined(client: Client, message: Message):
         [
              [
                   InlineKeyboardButton("𝐋𝐀𝐆𝐈 𝐕𝐈𝐑𝐀𝐋", url="https://t.me/LgViral"),
-                  InlineKeyboardButton("𝐓𝐄𝐑𝐕𝐈𝐑𝐀𝐋", url="https://t.me/TerViral")
-             ],
-             [
                   InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url = f'https://t.me/{client.username}?start={argument}')
              ]
         ]

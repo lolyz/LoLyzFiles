@@ -98,19 +98,19 @@ async def not_joined(client: Client, message: Message):
     try:
         command, argument = message_text.split()
         text = text + f" <b>\n\n<a href='https://t.me/{client.username}?start={argument}'>GET LINK</a></b>"
-            except ValueError:
+    except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup(
+        [
              [
-                  [
-                       InlineKeyboardButton("𝐋𝐀𝐆𝐈 𝐕𝐈𝐑𝐀𝐋", url="https://t.me/LgViral"),
-                       InlineKeyboardButton("𝐓𝐄𝐑𝐕𝐈𝐑𝐀𝐋", url="https://t.me/TerViral")
-                  ],
-                  [
-                       InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url = f'https://t.me/{client.username}?start={argument}')
-                  ]
+                  InlineKeyboardButton("𝐋𝐀𝐆𝐈 𝐕𝐈𝐑𝐀𝐋", url="https://t.me/LgViral"),
+                  InlineKeyboardButton("𝐓𝐄𝐑𝐕𝐈𝐑𝐀𝐋", url="https://t.me/TerViral")
+             ],
+             [
+                  InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url = f'https://t.me/{client.username}?start={argument}')
              ]
-         )
+        ]
+    )
     await message.reply(
         text = text,
         reply_markup = reply_markup,

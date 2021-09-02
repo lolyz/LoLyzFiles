@@ -97,7 +97,7 @@ async def not_joined(client: Client, message: Message):
     message_text = message.text
     try:
         command, bro = message_text.split()
-        text = text + f" <b>and <a href='https://t.me/{client.username}?start={bro}'>try again</a></b>"
+        text = text + f" <b>and <a href='https://t.me/{client.username}?start={bro}'>GET FILE</a></b>"
     except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup(
@@ -107,14 +107,13 @@ async def not_joined(client: Client, message: Message):
                   InlineKeyboardButton("𝐓𝐄𝐑𝐕𝐈𝐑𝐀𝐋", url="https://t.me/TerViral")
              ],
              [
-                  InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url = f'https://t.me/{client.username}?start={bro}')
+                  InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url = f'https://t.me/{client.username}?start')
              ]
         ]
     )
     await message.reply(
         text = text,
         reply_markup = reply_markup,
-        bro = message_text.split,
         quote = True,
         disable_web_page_preview = True
     )

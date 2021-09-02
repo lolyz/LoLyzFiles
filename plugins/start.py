@@ -97,8 +97,8 @@ async def not_joined(client: Client, message: Message):
     message_text = message.text
     try:
         command, argument = message_text.split()
-       
-    except ValueError:
+        text = text + f" <b>\n\n<a href='https://t.me/{client.username}?start={argument}'>GET LINK</a></b>"
+              except ValueError:
         pass
         reply_markup = InlineKeyboardMarkup(
                         [
@@ -111,7 +111,7 @@ async def not_joined(client: Client, message: Message):
                             ]
                         ]
                     )
-    await message.reply(
+     await message.reply(
         text = text,
         reply_markup = reply_markup,
         quote = True,

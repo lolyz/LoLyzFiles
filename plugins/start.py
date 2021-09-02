@@ -97,7 +97,6 @@ async def not_joined(client: Client, message: Message):
     message_text = message.text
     try:
         command, argument = message_text.split()
-        text = "<b>GET LINK</b>"
     except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup(

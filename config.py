@@ -12,7 +12,7 @@ APP_ID = int(os.environ.get("APP_ID", "5483910"))
 API_HASH = os.environ.get("API_HASH", "235040f738b2f7420f51f4bd764ff421")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001490096978"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001564048693"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1343409083"))
@@ -20,7 +20,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1343409083"))
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001427249232"))
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "7"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nJangan Lupa Kunjungi ahmantap.com\n\nChannel : @TerViral & @LgViral.\n\nWebsite : Freenulls.com")

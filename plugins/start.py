@@ -100,7 +100,7 @@ async def not_joined(client: Client, message: Message):
        
     except ValueError:
         pass
-    reply_markup = InlineKeyboardMarkup(
+        reply_markup = InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton("𝐋𝐀𝐆𝐈 𝐕𝐈𝐑𝐀𝐋", url=f'https://t.me/LgViral'),

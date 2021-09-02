@@ -73,8 +73,9 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("CLOSE", callback_data = "close"),
-                    InlineKeyboardButton("SEWA BOT", callback_data = "about")
+
+                    InlineKeyboardButton("SEWA BOT", callback_data = "about"),
+                    InlineKeyboardButton("CLOSE", callback_data = "close")
                 ]
             ]
         )
@@ -108,12 +109,11 @@ async def not_joined(client: Client, message: Message):
                   InlineKeyboardButton("𝐋𝐀𝐆𝐈 𝐕𝐈𝐑𝐀𝐋", url="https://t.me/TerViral")
              ],
              [
-                  InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url = f'https://t.me/{client.username}?start={argument}')
+                  InlineKeyboardButton("🔄 𝐆𝐄𝐓 𝐅𝐈𝐋𝐄 🔄", url = f'https://t.me/{client.username}?start=')
              ]
         ]
     )
     await message.reply(
-        argument = message_text.split(),
         text = text,
         reply_markup = reply_markup,
         quote = True,
